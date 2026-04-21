@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nós somos uma equipe focada em transformar ideias em presença digital de verdade.">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="">
+    <title>Ph criações & soluções</title>
+    <!--<link rel="stylesheet" href=""> --> 
+    <link rel="shortcut icon" href="assets/Logo PH.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="responsividade.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img class="logo-img" src="assets/Logo PH.jpeg" alt="Logotipo">
+        </div>
+
+        <nav class="navbar">
+            <ul class="navlinks">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>PH Criações & Soluções</h1>
+                <h5>Design & Marketing Digital</h5>
+                <div class="btns-hero">
+                    <a class="btn-mais" href="#sobre">SAIBA MAIS <i class="fa-solid fa-arrow-down"></i></a>
+                    <a class="btn-orcamento" href="https://wa.me/8695169701?text=Olá,Gostaria de fazer um orçamento" target="_blank">FAZER ORÇAMENTO <i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <h1 class="title-sobre" id="sobre">Sobre Nós</h1>
+
+        <section class="sobre ">
+            <div class="text-sobre">
+                <p class="descricao-sobre">
+                    Nós somos uma equipe focada em transformar ideias em presença digital de verdade.
+                    Acreditamos que todo negócio, independente do tamanho, merece ter um espaço profissional na internet
+                    — não apenas para existir, mas para crescer, atrair clientes e gerar resultados.
+                    Trabalhamos com soluções digitais completas, como criação de sites, landing pages, currículos
+                    modernos e vitrines online. Cada projeto é pensado de forma estratégica, unindo design,
+                    funcionalidade e performance para entregar algo que realmente faça diferença.
+                    Nosso objetivo vai além de criar páginas bonitas. Queremos ajudar pessoas e empresas a se
+                    posicionarem melhor no digital, transmitindo profissionalismo e conquistando mais oportunidades.
+                    Valorizamos a simplicidade, a eficiência e o resultado. Por isso, buscamos sempre entender a
+                    necessidade de cada cliente e entregar soluções personalizadas, acessíveis e de qualidade.
+                    Se você quer sair do básico e levar sua presença digital para outro nível, está no lugar certo.
+                    Oferecemos soluções digitais completas para quem deseja crescer, se destacar e gerar resultados no
+                    ambiente online.
+                </p>
+            </div>
+        </section>
+
+        <h1 class="title-servicos" id="servicos">Serviços</h1>
+
+        <section class="serviços">
+
+            <div class="cards">
+                <div class="card">
+                    <h4><i class="fa-solid fa-globe"></i> Vitrines Digitais</h4>
+                    <p>
+                    Soluções ideais para apresentar seus produtos ou serviços de forma prática, profissional e acessível para seus clientes.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h4><i class="fa-regular fa-file-lines"></i> Currículos Profissionais</h4>
+                    <p>
+                    Criamos currículos organizados, modernos e visualmente atrativos para aumentar suas chances no mercado de trabalho.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h4><i class="fa-solid fa-sitemap"></i> Sites lnstitucionais</h4>
+                    <p>
+                    Desenvolvemos sites modernos, responsivos e personalizados, pensados para transmitir credibilidade e fortalecer a presença digital do seu negócio.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h4><i class="fa-solid fa-chart-area"></i> Landing Pages</h4>
+                    <p>
+                    Páginas estratégicas criadas com foco em atrair, engajar e transformar visitantes em clientes.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <h1 class="title-contato" id="contato">Contate-nos</h1>
+
+        <section class="contato">
+            <div class="text-contatos">
+                <h2>Vamos conversar ?</h2>
+                <div>
+                    <a class="btn-orcamento" href="https://wa.me/8695169701?text=Olá,Gostaria de fazer um orçamento" target="_blank">Entrar em contato <i class="fa-solid fa-phone-volume"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+</body>
+
+<script>
+    // Seleciona todos os elementos das seções principais e cards
+    const elementosAnimar = document.querySelectorAll(
+        '.sessao-hero, .sobre, .propriedades, .clientes, .contato, .card, .text-sobre, .cards, .cards-clientes, .text-contato'
+    );
+
+    elementosAnimar.forEach(el => {
+        el.classList.add('escondido-scroll');
+    });
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('aparecendo-scroll');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    elementosAnimar.forEach(el => {
+        observer.observe(el);
+    });
+</script>
+
+</html>

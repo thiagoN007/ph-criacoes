@@ -1,0 +1,154 @@
+@media screen and (max-width: 768px) {
+   
+.logo-img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #3292be;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.hero-text h1 {
+    font-size: 1.8rem;
+    color: #3292be;
+    margin-bottom: 5px;
+}
+
+.hero-text h5 {
+    color: #289791;
+    font-size: 13px;
+}
+
+.btn-mais, .btn-orcamento {
+    border: 1px solid;
+    margin-top: 20px;
+    padding: 20px;
+    background: #3292be;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btns-hero {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column-reverse;
+}
+
+.btn-mais:hover {
+    border-radius: 20px;
+}
+
+.btn-mais {
+    text-align: center;
+}
+
+.btn-orcamento {
+    border: 1px solid;
+    margin-top: 20px;
+    padding: 20px;
+    background: #289791;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-size: 12px;
+}
+
+
+.sobre {
+    width: 100%;
+    padding: 20px;
+}
+
+
+.descricao-sobre {
+    width: 100%;
+    font-size: 18px;
+    text-align:center;
+    margin-bottom: 50px;
+}
+
+.title-sobre {
+    margin-bottom: 50px;
+}
+
+.title-servicos {
+    margin-bottom: 50px;
+}
+
+.serviços {
+    padding: 20px;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid;
+    border-radius: 10px;
+    background: #3292be;
+    color: #fff;
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.contato {
+    padding: 100px;
+}
+
+.text-contatos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: #289791;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+}
