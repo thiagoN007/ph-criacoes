@@ -77,9 +77,10 @@ a:hover {
 }
 
 .btn-orcamento {
+    width: 100%;
     border: 1px solid;
     margin-top: 20px;
-    padding: 20px;
+    padding: 10px 20px;
     background: #289791;
     color: #fff;
     text-decoration: none;
@@ -148,7 +149,7 @@ h2 {
     color: #289791;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 800px) {
