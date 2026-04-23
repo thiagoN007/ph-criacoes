@@ -16,6 +16,7 @@
 
 <body>
     <header>
+
         <div class="logo">
             <img class="logo-img" src="assets/Logo PH.jpeg" alt="Logotipo">
         </div>
@@ -33,14 +34,19 @@
     <main>
 
         <section class="hero">
+
             <div class="hero-text">
+
                 <h1>PH Criações & Soluções</h1>
                 <h5>Design & Marketing Digital</h5>
+                
                 <div class="btns-hero">
                     <a class="btn-mais" href="#sobre">SAIBA MAIS <i class="fa-solid fa-arrow-down"></i></a>
                     <a class="btn-orcamento" href="https://wa.me/8695169701?text=Olá,Gostaria de fazer um orçamento" target="_blank">FAZER ORÇAMENTO <i class="fa-brands fa-whatsapp"></i></a>
                 </div>
+
             </div>
+
         </section>
 
         <h1 class="title-sobre" id="sobre">Sobre Nós</h1>
@@ -105,14 +111,16 @@
 
         <section class="contato">
             <div class="text-contatos">
-                <h2>Vamos conversar ?</h2>
-                <div>
-                    <a class="btn-orcamento" href="https://wa.me/8695169701?text=Olá,Gostaria de fazer um orçamento" target="_blank">Entrar em contato </i></a>
+                <div class="btn-contato-div">
+                    <a class="btn-contato" href="https://wa.me/8695169701?text=Olá,Gostaria de fazer um orçamento" target="_blank">Entrar em contato! </i></a>
                 </div>
 
             </div>
         </section>
 
+        <footer>
+            <h5 id="ano"></h5>
+        </footer>
 
     </main>
 
@@ -120,6 +128,14 @@
 </body>
 
 <script>
+
+    const ano = document.getElementById("ano");
+    const data = new Date();
+    const data_atual = data.getFullYear();
+
+    ano.textContent = `${data_atual} - Desenvolvido pela Equipe Ph-criações.`;
+
+
     // Seleciona todos os elementos das seções principais e cards
     const elementosAnimar = document.querySelectorAll(
         '.sessao-hero, .sobre, .propriedades, .clientes, .contato, .card, .text-sobre, .cards, .cards-clientes, .text-contato'
